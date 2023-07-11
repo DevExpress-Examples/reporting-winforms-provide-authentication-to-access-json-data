@@ -101,7 +101,7 @@ Namespace Xtrareport_json_datasource_with_authorization
 			Dim i As Integer = 0
 			For Each component In report.ComponentStorage
 				Dim jsonDS = (TryCast(component, DevExpress.DataAccess.Json.JsonDataSource))
-				Dim jsonSource = (jsonDS?TryCast(.JsonSource, MyUriJsonSource))
+				Dim jsonSource = (TryCast(jsonDS?.JsonSource, MyUriJsonSource))
 				If jsonSource IsNot Nothing Then
 					i += 1
 					jsonDS.ConnectionName = String.Format("newJsonConnection_{0}{1}", report.Name, i.ToString())

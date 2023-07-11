@@ -36,52 +36,52 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v22.2">
+    <Reference Include="DevExpress.Data.v23.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.DataAccess.v22.2">
+    <Reference Include="DevExpress.DataAccess.v23.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.DataAccess.v22.2.UI">
+    <Reference Include="DevExpress.DataAccess.v23.1.UI">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Printing.v22.2.Core">
+    <Reference Include="DevExpress.Printing.v23.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Utils.v22.2">
+    <Reference Include="DevExpress.Utils.v23.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Utils.v22.2.UI">
+    <Reference Include="DevExpress.Utils.v23.1.UI">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraEditors.v22.2">
+    <Reference Include="DevExpress.XtraEditors.v23.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraLayout.v22.2">
+    <Reference Include="DevExpress.XtraLayout.v23.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v22.2">
+    <Reference Include="DevExpress.XtraPrinting.v23.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Charts.v22.2.Core">
+    <Reference Include="DevExpress.Charts.v23.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v22.2">
+    <Reference Include="DevExpress.XtraCharts.v23.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.CodeParser.v22.2">
+    <Reference Include="DevExpress.CodeParser.v23.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraReports.v22.2">
+    <Reference Include="DevExpress.XtraReports.v23.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraReports.v22.2.Extensions">
+    <Reference Include="DevExpress.XtraReports.v23.1.Extensions">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Drawing.v22.2">
+    <Reference Include="DevExpress.Drawing.v23.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
