@@ -15,6 +15,11 @@ In this approach, only the JsonDataSource's connection name is serialized to the
 You can use the [UriJsonSource](https://docs.devexpress.com/CoreLibraries/DevExpress.DataAccess.Json.UriJsonSource) object to specify authentication parameters. Assign this object to the JsonDataSource's [JsonSource](https://docs.devexpress.com/CoreLibraries/DevExpress.DataAccess.Json.JsonDataSource.JsonSource) property.   
 In this approach, authentication parameters are serialized to the report's definition together with the JsonDataSource's UriJsonSource object.
 
+## Files to Review
+
+* [MyUriJsonSource.cs](./CS/ReportCustomization/MyUriJsonSource.cs) (VB: [MyUriJsonSource.vb](./VB/ReportCustomization/MyUriJsonSource.vb))
+* [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
+
 ## Documentation
 
 * [Provide Authentication to Access JSON Data (Runtime Sample)](https://docs.devexpress.com/XtraReports/400660)
