@@ -1,4 +1,4 @@
-using DevExpress.DataAccess.Json;
+﻿using DevExpress.DataAccess.Json;
 using DevExpress.XtraReports.UI;
 using System;
 using System.Collections.Generic;
@@ -15,6 +15,7 @@ namespace Xtrareport_json_datasource_with_authorization
             InitializeComponent();
         }
 
+        #region CreateReportDataSourceFromConnectionStringButton_Click
         private void CreateReportDataSourceFromConnectionStringButton_Click(object sender, EventArgs e) {
             // XtraReport1 does not have assigned data sources
             var report = new XtraReport1(); 
@@ -29,6 +30,8 @@ namespace Xtrareport_json_datasource_with_authorization
 
             new DevExpress.XtraReports.UI.ReportDesignTool(report).ShowDesigner();
         }
+        #endregion
+        #region CreateReportDataSourceFromConnectionString
         public static JsonDataSource CreateReportDataSourceFromConnectionString() {
             JsonDataSource jsonDataSource = new DevExpress.DataAccess.Json.JsonDataSource() {
                 // The application's configuration file should include the "JsonConnection" connection string
@@ -36,7 +39,9 @@ namespace Xtrareport_json_datasource_with_authorization
             };
             return jsonDataSource;
         }
+        #endregion
 
+        #region CreateReportDataSourceWithAuthenticationInCodeButton_Click
         private void CreateReportDataSourceWithAuthenticationInCodeButton_Click(object sender, EventArgs e) {
             // XtraReport1 does not have assigned data sources
             var report = new XtraReport1();
@@ -51,7 +56,11 @@ namespace Xtrareport_json_datasource_with_authorization
 
             new DevExpress.XtraReports.UI.ReportDesignTool(report).ShowDesigner();
         }
+        #endregion
+        #region CreateReportDataSourceWithAuthenticationInCode
         public static JsonDataSource CreateReportDataSourceWithAuthenticationInCode() {
+        #endregion
+            #region CreateReportDataSourceWithAuthenticationInCode_JsonSource
             // Create a new UriJsonSource object and configure authentication data in it
             var jsonSource = new DevExpress.DataAccess.Json.UriJsonSource();
             jsonSource.Uri = new Uri(@"http://northwind.servicestack.net/customers.json");
@@ -65,15 +74,21 @@ namespace Xtrareport_json_datasource_with_authorization
 
             jsonSource.QueryParameters.Add(new QueryParameter("id", "123456"));
             jsonSource.QueryParameters.Add(new QueryParameter("name", "MyName"));
+            #endregion
+            #region CreateReportDataSourceWithAuthenticationInCode_JsonDataSource
             // Create a JsonDataSource object and assign the UriJsonSource object to it
             var jsonDataSource = new DevExpress.DataAccess.Json.JsonDataSource() {
                 JsonSource = jsonSource
             };
 
             return jsonDataSource;
+            #endregion
+            #region CreateReportDataSourceWithAuthenticationInCode_EndClass
         }
+        #endregion
 
     }
+    #region ConvertReportWithMyUriJsonSourceTo191
     public static class JsonDatasourceAuthorization_Example {
         public static string ConvertReportWithMyUriJsonSourceTo191(string repxContent, out List<string> connectionString) {
             var report = new XtraReport();
@@ -110,4 +125,5 @@ namespace Xtrareport_json_datasource_with_authorization
             }
         }
     }
+    #endregion
 }
