@@ -37,10 +37,10 @@ Namespace Xtrareport_json_datasource_with_authorization
 			Dim jsonDataSource As JsonDataSource = New DevExpress.DataAccess.Json.JsonDataSource() With {.ConnectionName = "JsonConnection"}
 			Return jsonDataSource
 		End Function
-		#End Region
+#End Region
 
-		#Region "CreateReportDataSourceWithAuthenticationInCodeButton_Click"
-		Private Sub CreateReportDataSourceWithAuthenticationInCodeButton_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button2.Click, button1.Click
+#Region "CreateReportDataSourceWithAuthenticationInCodeButton_Click"
+		Private Sub CreateReportDataSourceWithAuthenticationInCodeButton_Click(ByVal sender As Object, ByVal e As EventArgs)
 			' XtraReport1 does not have assigned data sources
 			Dim report = New XtraReport1()
 
@@ -54,8 +54,8 @@ Namespace Xtrareport_json_datasource_with_authorization
 
 			Call (New DevExpress.XtraReports.UI.ReportDesignTool(report)).ShowDesigner()
 		End Sub
-		#End Region
-		#Region "CreateReportDataSourceWithAuthenticationInCode"
+#End Region
+#Region "CreateReportDataSourceWithAuthenticationInCode"
 		Public Shared Function CreateReportDataSourceWithAuthenticationInCode() As JsonDataSource
 		#End Region
 			#Region "CreateReportDataSourceWithAuthenticationInCode_JsonSource"
